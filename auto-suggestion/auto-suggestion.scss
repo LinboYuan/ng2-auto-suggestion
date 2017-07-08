@@ -1,0 +1,38 @@
+$suggestion-box-height: 34px;
+
+.auto-suggestion-container {
+  position: relative;
+
+  .input-box-wrapper {
+    height: $suggestion-box-height;
+  }
+
+  .suggestion-item-container {
+    width: 100%;
+    color: #555555;
+    background-color: #fff;
+    border: 1px solid #C2C2C2;
+    border-top: none;
+    position: absolute;
+    top: $suggestion-box-height;
+    z-index: 999;
+
+    .suggestion-item {
+      display: block;
+      font-size: 14px;
+      padding: 3px 12px;
+      cursor: pointer;
+      line-height: 18px;
+
+      &:hover, &.selected {
+        color: #fff;
+        background-color: #1E90FF;
+      }
+
+      span {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+}

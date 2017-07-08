@@ -1,0 +1,11 @@
+<div class="auto-suggestion-container">
+  <div class="input-box-wrapper">
+    <input type="text" placeholder="{{placeholder}}" class="input-box form-control" (focus)="toggleSuggestion(true)"
+           (dblclick)="toggleSuggestion()" (click)="toggleSuggestion(true)" [(ngModel)]="keyword">
+  </div>
+  <div class="suggestion-item-container" *ngIf="showSuggestion">
+    <div *ngFor="let item of suggestions" class="suggestion-item" [class.selected]="selectedItemValue==item.value"
+         (click)="onSuggestionItemClick(item)" [innerHtml]="item.formattedText">
+    </div>
+  </div>
+</div>
