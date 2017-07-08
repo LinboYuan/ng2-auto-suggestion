@@ -1,7 +1,7 @@
 # ng2-auto-suggestion
 ### <i>A auto suggestion component for angular 2+</i>
 -----------------
-#### <i>Just source code, for time reason, no demos, and not support npm etc. yet.</i>
+#### <i>Just source code, for time reason, no demos, and not support npm etc. yet. Copy to your project and use it as a ordinary component is the only way right now. Just coded by typescript and sass, no other dependencies any more. :)</i>
 -----------------
 
 ## **keyword**  <br/>
